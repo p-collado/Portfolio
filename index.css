@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #542284;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -219,7 +219,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 3px solid  var(--pink);
     font-weight: 400;
 }
 
@@ -405,8 +405,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
-    height: 100vh;
+        url('./images/test/header.jpg');
+    height: 80vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -567,9 +567,15 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
+/*.contact{
+        background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+        url('./images/test/header.jpg');
+}*/
+
 .contact__info {
     max-width: var(--container-medium-width);
 }
+
 
 /* --------------------------------------- */
 /* ----- Footer ----- */
