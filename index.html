@@ -20,7 +20,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 
   <!-- Put your site title here -->
   <title>
@@ -47,7 +50,7 @@
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
-            <a href="#contact" class="nav__link">Contact</a>
+          <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -60,7 +63,7 @@
         </h1>
         <!-- Put a small paragraph about yourself -->
         <p>Software engineer especialized on videogames development</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
       </div>
     </div>
   </header>
@@ -71,58 +74,142 @@
     <!-- ***** Work ***** -->
 
     <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+      <div class="col" style="margin-left: 10%;">
+        <div class="row" style="margin-left: 0%;">
+          <h2>My Work</h2>
+          <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
+            <!-- Each div with the work__box class is a project. -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>End Of Life</h3>
-              <p>
-                Is a 3rd person shooter game made with UE5. The city is a mirror rubik cube. 
-                It rotates, changing the gravity of the level allowing unique in-game situations from different perspectives.
-                You use these gravity shifts and character tools to deal with your enemies and puzzles.
-              </p>
-              <p>Professional Background:</p>
-              <ul class="work__list">
-                <li>Navmesh Tool</li>
-                <li>AI Programming</li>
-                <li>Gameplay Programmer</li>
-                <li>Performance Profiler</li>
-                <li>Level Streaming Tool</li>
-              </ul>
-              </p>
-
-             <div class="work__links">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>End Of Life</h3>
+                <p>
+                  Is a 3rd person shooter game made with UE5. The city is a mirror rubik cube.
+                  It rotates, changing the gravity of the level allowing unique in-game situations from different
+                  perspectives.
+                  You use these gravity shifts and character tools to deal with your enemies and puzzles.
+                </p>
+                <p>Professional Background:</p>
+                <ul class="work__list">
+                  <li>Navmesh Tool</li>
+                  <li>AI Programming</li>
+                  <li>Gameplay Programmer</li>
+                  <li>Performance Profiler</li>
+                  <li>Level Streaming Tool</li>
+                </ul>
+                </p>
+                <div class="work__links">
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/project-1.jpg" class="work__image" alt="Project 1" />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.jpg" class="work__image" alt="Project 1" />
-            </div> 
+            <div class="work__text">
+              <h3>Media Reference</h3>
+            </div>
+
+            <div class="work__box" style="margin-left: 0%;">
+              <button type="button" class="btn btn--pink" href="#EOLCarousel" data-slide="prev">Previous</button>
+              <div class="container-fluid px-0" style="margin: 5%;">
+                <div id="EOLCarousel" class="carousel slide">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <div class="d-flex justify-content-center">
+                        <div class="carousel-caption">
+                          <h3
+                            style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
+                            NavMesh Generation</h3>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video width="640" height="360" controls>
+                            <source src="./videos/NavMeshGeneration.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center">
+                        <div class="carousel-caption">
+                          <h3
+                            style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
+                            NavMesh Rotation</h3>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video width="640" height="360" controls>
+                            <source src="./videos/NavmeshRotation.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center">
+                        <div class="carousel-caption">
+                          <h3
+                            style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
+                            Setting up Smartlinks</h3>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video width="640" height="360" controls>
+                            <source src="./videos/Smartlinks.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center">
+                        <div class="carousel-caption">
+                          <h3
+                            style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
+                            All features</h3>
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video width="640" height="360" controls>
+                            <source src="./videos/AllFeatures.mp4" type="video/mp4">
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--<a class="carousel-control-prev" href="#EOLCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark rounded-circle p-2 shadow d-block"
+                    aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#EOLCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon bg-dark rounded-circle p-2 shadow d-block"
+                    aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>-->
+
+                </div>
+              </div>
+              <button type="button" class="btn btn--pink" href="#EOLCarousel" data-slide="next">Next</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-    <!-- ***** About ***** -->
+  <!-- ***** About ***** -->
 
-    <section class="about" id="about">
-      <div class="row">
+  <section class="about" id="about">
+    <div class="col" style="margin-left: 10%;">
+      <div class="row" style="margin-left: 0%;">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I am an enthusiastic person about videogames since I was a teenager. 
-              I started to be interested on videogames programming when I was 15 using UE3. 
-              I am always looking for improving my programming skills
-              I am an open minded, responsible, tidy, and proactive person. I am 
+              I am an enthusiastic person about videogames since I was a teenager.
+              I started to be interested on videogames programming when I was 15 using UE3.
+              I am always looking for improving my programming skills.
+              I am an open minded, responsible, tidy, and proactive person. I am
               eager to keep learning new things and develop amazing features.
-              I am currently developing End of Life as final project at Universidad Utad. In End of Life, I am 
-              focusing on AI systems making our own Navmesh and tools, which are needed in our game.
+              I am focusing on AI systems making our own Navmesh and tools.
             </p>
             <!-- Provide a link to your resume -->
             <a href="./cv.pdf" class="btn">My Resume</a>
@@ -134,36 +221,46 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- ***** Contact ***** -->
 
   <section class="contact" id="contact">
-    <div class="row">
+    <div class="col" style="margin-left: 10%;">
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          
+
         </p>
         <!-- Replace the email with yours -->
         <a href="prc2895@gmail.com" class="btn">prc2895@gmail.com</a>
       </div>
-         <div class="footer__social-link-item">
-          <p>
-            
-          </p>
-          <a href=https://www.linkedin.com/in/pedro2895/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </div>
+      <div class="footer__social-link-item">
+        <p>
+
+        </p>
+        <a href=https://www.linkedin.com/in/pedro2895/">
+          <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="./index.js"></script>
 </body>
 
