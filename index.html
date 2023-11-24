@@ -79,14 +79,13 @@
                   You use these gravity shifts and character tools to deal with your enemies and puzzles.
                 </p>
                 <p>Professional Background:</p>
-                <ul class="work__list">
-                  <li>Navmesh Tool</li>
-                  <li>AI Programming</li>
-                  <li>Gameplay Programmer</li>
-                  <li>Performance Profiler</li>
-                  <li>Level Streaming Tool</li>
-                </ul>
-                </p>
+                  <ul class="work__list">
+                    <li>Navmesh Tool</li>
+                    <li>AI Programming</li>
+                    <li>Gameplay Programmer</li>
+                    <li>Performance Profiler</li>
+                    <li>Level Streaming Tool</li>
+                  </ul>
                 <div class="work__links">
                 </div>
               </div>
@@ -104,29 +103,46 @@
                 <div id="EOLCarousel" class="carousel slide">
                   <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                      <div class="d-flex justify-content-center">
+                      <div class="d-block justify-content-center">
                         <!--<div class="carousel-caption">
                           <h3
                             style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
                             NavMesh Generation
                           </h3>
                         </div>-->
+                        <p>
+                          NavMesh Generation
+                        </p>
+                        <p>
+                          In this video I show how the navmesh is generated. There are some mandatory variables that need to be set up.
+                          In the tool, on the creation parameters, the 'Trace Distance XY' variable allows to change the length of a cell, so The lower the value, the more accurate.
+                          You can change the max angle allowed so that AI agents are able to climb ramps in a range from 0 grades to that angle.
+                          There is a debug section to visualize the data of the generated navmesh, you can check the current state of the navmesh, what information it has, change the color and other stuff.
+                        </p>
                         <div class="embed-responsive embed-responsive-16by9">
                           <!--<video width="640" height="360" controls>-->
                             <iframe src="https://www.youtube.com/embed/3pRW5LkLy6Q" allowfullscreen></iframe>
-                            <!--<source src="./videos/NavMeshGeneration.mp4" type="video/mp4">-->
-                          </video>
+                            <!--<source src="./videos/NavMeshGeneration.mp4" type="video/mp4">
+                          </video>-->
                         </div>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <div class="d-flex justify-content-center">
+                      <div class="d-block justify-content-center">
                         <!--<div class="carousel-caption">
                           <h3
                             style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
                             NavMesh Rotation
                           </h3>
                         </div>-->
+                        <p>
+                          NavMesh Rotation
+                        </p>
+                        <p>
+                          Because the perspective of our world and the orientation from which our character is located can change, we needed our navmesh to be able to be generated in any orientation.
+                          In this video I show how two navmeshes are generated in different orientations. To solve the orientation problem what I did was to treat the walls and ceilings as floors, 
+                          changing the orientation of the volume that generates the navmesh with the orientation of the wall or ceiling where you want to generate it, we will get the navmesh we want.
+                        </p>
                         <div class="embed-responsive embed-responsive-16by9">
                           <!-- <video width="640" height="360" controls>
                             <source src="./videos/NavmeshRotation.mp4" type="video/mp4">
@@ -136,12 +152,19 @@
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <div class="d-flex justify-content-center">
+                      <div class="d-block justify-content-center">
                         <!--<div class="carousel-caption">
                           <h3
                             style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
                             Setting up Smartlinks</h3>
                         </div>-->
+                        <p>
+                          Smartlinks
+                        </p>
+                        <p>
+                          A single navmesh limits an area where AI agents are able to walk, so in order to cover a higher area we need to implement smartlinks.
+                          A smartlink connects two navmeshes allowing access to the information they contain so that AI agents are able to ask for paths in the connected navmeshes.
+                        </p>
                         <div class="embed-responsive embed-responsive-16by9">
                           <!--<video width="640" height="360" controls>
                             <source src="./videos/Smartlinks.mp4" type="video/mp4">
@@ -151,12 +174,18 @@
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <div class="d-flex justify-content-center">
+                      <div class="d-block justify-content-center">
                         <!--<div class="carousel-caption">
                           <h3
                             style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
                             All features</h3>
                         </div>-->
+                        <p>
+                          All Features
+                        </p>
+                        <p>
+                          In this video I show you all features working. An AI agent walking using the navmesh and smartlink features.
+                        </p>
                         <div class="embed-responsive embed-responsive-16by9">
                           <!--<video width="640" height="360" controls>
                             <source src="./videos/AllFeatures.mp4" type="video/mp4">
@@ -197,7 +226,7 @@
         <div class="about__content">
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
-            <p>
+            <p  style="text-align: justify">
               I am an enthusiastic person about videogames since I was a teenager.
               I started to be interested on videogames programming when I was 15 using UE3.
               I am always looking for improving my programming skills.
