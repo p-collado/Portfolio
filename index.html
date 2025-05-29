@@ -1,310 +1,139 @@
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-
-  <!-- Put your site title here -->
-  <title>
-    Pedro Collado Rojas portfolio.
-  </title>
-
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Collado Rojas - Game Developer Portfolio</title>
+    
+    <!-- Enlaces a archivos CSS externos -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
-
 <body>
+    <!-- Partículas de fondo animadas -->
+    <div class="particles" id="particles"></div>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Work</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Pedro Collado Rojas</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Software engineer especialized on videogames development</p>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="col" style="margin-left: 10%;">
-        <div class="row" style="margin-left: 0%;">
-          <h2>My Work</h2>
-          <div class="work__boxes">
-
-              <!-- Each div with the work__box class is a project. -->
-
-              <div class="work__box">
-                  <div class="work__text">
-                      <h3> End Of Life </h3>
-                      <p>
-                          Is a 3rd person shooter game made with UE5. The city is a mirror rubik cube.
-                          It rotates, changing the gravity of the level allowing unique in-game situations from different
-                          perspectives.
-                          You use these gravity shifts and character tools to deal with your enemies and puzzles.
-                      </p>
-                      <p>Professional Background:</p>
-                      <ul class="work__list">
-                          <li>Navmesh Tool</li>
-                          <li>AI Programming</li>
-                          <li>Gameplay Programmer</li>
-                          <li>Performance Profiler</li>
-                          <li>Level Streaming Tool</li>
-                      </ul>
-                      <div class="work__links">
-                          <p>
-                              Links: &nbsp;&nbsp;&nbsp;
-                          </p>
-                          <a href="https://store.steampowered.com/app/2666520/End_Of_Life/">
-                              <img src="./images/steam.png" alt="Steam store link">
-                          </a>
-
-                          &nbsp;&nbsp;
-
-                          <a href="https://twitter.com/EndOfLifeGame">
-                              <img src="./images/Xicon.png" alt="Twitter link">
-                          </a>
-                      </div>
-                  </div>
-                  <div class="work__image-box">
-                      <img src="./images/project-1.jpg" class="work__image" alt="Project 1" />
-                  </div>
-              </div>
-              <div class="work__text">
-                  <h3>Media Reference</h3>
-              </div>
-
-              <div class="work__box" style="margin-left: 0%;">
-                  <button type="button" class="btn btn--pink" href="#EOLCarousel" data-slide="prev">Previous</button>
-                  <div class="container-fluid px-0" style="margin: 5%;">
-                      <div id="EOLCarousel" class="carousel slide">
-                          <div class="carousel-inner" role="listbox">
-                              <div class="carousel-item active">
-                                  <div class="d-block justify-content-center">
-                                      <!--<div class="carousel-caption">
-                              <h3
-                                style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
-                                NavMesh Generation
-                              </h3>
-                            </div>-->
-                                      <p>
-                                          NavMesh Generation
-                                      </p>
-                                      <p style="text-align: justify">
-                                          In this video I show how the navmesh is generated. There are some mandatory variables that need to be set up.
-                                          In the tool, on the creation parameters, the 'Trace Distance XY' variable allows to change the length of a cell, so The lower the value, the more accurate.
-                                          You can change the max angle allowed so that AI agents are able to climb ramps in a range from 0 grades to that angle.
-                                          There is a debug section to visualize the data of the generated navmesh, you can check the current state of the navmesh, what information it has, change the color and other stuff.
-                                      </p>
-                                      <div class="embed-responsive embed-responsive-16by9">
-                                          <!--<video width="640" height="360" controls>-->
-                                          <iframe src="https://www.youtube.com/embed/3pRW5LkLy6Q" allowfullscreen></iframe>
-                                          <!--<source src="./videos/NavMeshGeneration.mp4" type="video/mp4">
-                                </video>-->
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                  <div class="d-block justify-content-center">
-                                      <!--<div class="carousel-caption">
-                              <h3
-                                style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
-                                NavMesh Rotation
-                              </h3>
-                            </div>-->
-                                      <p>
-                                          NavMesh Rotation
-                                      </p>
-                                      <p style="text-align: justify">
-                                          Because the perspective of our world and the orientation from which our character is located can change, we needed our navmesh to be able to be generated in any orientation.
-                                          In this video I show how two navmeshes are generated in different orientations. To solve the orientation problem what I did was to treat the walls and ceilings as floors,
-                                          changing the orientation of the volume that generates the navmesh with the orientation of the wall or ceiling where you want to generate it, we will get the navmesh we want.
-                                      </p>
-                                      <div class="embed-responsive embed-responsive-16by9">
-                                          <!-- <video width="640" height="360" controls>
-                                  <source src="./videos/NavmeshRotation.mp4" type="video/mp4">
-                                </video>-->
-                                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mfp6RhsPSyU" allowfullscreen></iframe>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                  <div class="d-block justify-content-center">
-                                      <!--<div class="carousel-caption">
-                              <h3
-                                style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
-                                Setting up Smartlinks</h3>
-                            </div>-->
-                                      <p>
-                                          Smartlinks
-                                      </p>
-                                      <p style="text-align: justify">
-                                          A single navmesh limits an area where AI agents are able to walk, so in order to cover a higher area we need to implement smartlinks.
-                                          A smartlink connects two navmeshes allowing access to the information they contain so that AI agents are able to ask for paths between the connected navmeshes.
-                                      </p>
-                                      <div class="embed-responsive embed-responsive-16by9">
-                                          <!--<video width="640" height="360" controls>
-                                  <source src="./videos/Smartlinks.mp4" type="video/mp4">
-                                </video>-->
-                                          <iframe src="https://www.youtube.com/embed/eJNVW2lUc1E" allowfullscreen></iframe>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                  <div class="d-block justify-content-center">
-                                      <!--<div class="carousel-caption">
-                              <h3
-                                style="background-color: rgba(0, 0, 0, 0.801); padding: 0%; margin-bottom: 60%; border: 0%;">
-                                All features</h3>
-                            </div>-->
-                                      <p>
-                                          All Features
-                                      </p>
-                                      <p style="text-align: justify">
-                                          In this video I show you all features working. An AI agent walking using the navmesh and smartlink features.
-                                      </p>
-                                      <div class="embed-responsive embed-responsive-16by9">
-                                          <!--<video width="640" height="360" controls>
-                                  <source src="./videos/AllFeatures.mp4" type="video/mp4">
-                                </video>-->
-                                          <iframe src="https://www.youtube.com/embed/BQkc6kRRNYU" allowfullscreen></iframe>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!--<a class="carousel-control-prev" href="#EOLCarousel" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon bg-dark rounded-circle p-2 shadow d-block"
-                    aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#EOLCarousel" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon bg-dark rounded-circle p-2 shadow d-block"
-                    aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>-->
-
-                      </div>
-                  </div>
-                  <button type="button" class="btn btn--pink" href="#EOLCarousel" data-slide="next">Next</button>
-              </div>
-              <div class="work__box">
-                  <div class="work__text">
-                      <h3>Personal Projects on GitHub</h3>
-                  </div>
-                  <p>
-                      <a href="https://github.com/p-collado?tab=repositories">
-                          GitHub Repository <img src="./images/Git3.png" alt="GitHub link">
-                      </a>
-                  </p>
-              </div>
-          </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** About ***** -->
-
-  <section class="about" id="about">
-    <div class="col" style="margin-left: 10%;">
-      <div class="row" style="margin-left: 0%;">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p  style="text-align: justify">
-              I am an enthusiastic person about videogames since I was a teenager.
-              I started to be interested on videogames programming when I was 15 using UE3.
-              I am always looking for improving my programming skills.
-              I am an open minded, responsible, tidy, and proactive person. I am
-              eager to keep learning new things and develop amazing features.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="./cv.pdf" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="" alt="" />
-          </div>
+    <!-- NAVEGACIÓN FIJA -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Pedro Collado</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#games">Juegos</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ***** Contact ***** -->
+    <!-- SECCIÓN HERO/INICIO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pedro Collado Rojas</h1>
+            <h2>Game Developer & Programmer</h2>
+            <p>Creando experiencias únicas en videojuegos con Unreal Engine y tecnologías avanzadas</p>
+            <a href="#games" class="cta-button">Ver Mi Trabajo</a>
+        </div>
+    </section>
 
-  <section class="contact" id="contact">
-    <div class="col" style="margin-left: 10%;">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-
+    <!-- SECCIÓN JUEGOS PUBLICADOS -->
+    <section id="games">
+        <h2 class="section-title">🚀 Juegos Publicados</h2>
+        <p class="section-description">
+            Proyectos completos y publicados listos para jugar
         </p>
-        <!-- Replace the email with yours -->
-        <a href="prc2895@gmail.com" class="btn">prc2895@gmail.com</a>
-      </div>
-      <div class="footer__social-link-item">
-        <p>
+        
+        <!-- Contenedor de juegos publicados -->
+        <div class="projects-grid" id="published-games">
+            <!-- Los juegos se cargarán desde games-data.js -->
+        </div>
+    </section>
 
+    <!-- SECCIÓN PROYECTOS TÉCNICOS -->
+    <section id="projects">
+        <h2 class="section-title">⚙️ Proyectos Técnicos</h2>
+        <p class="section-description">
+            Demos y sistemas técnicos que demuestran habilidades específicas
         </p>
-        <a href=https://www.linkedin.com/in/pedro2895/">
-          <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-        </a>
-      </div>
-    </div>
-  </section>
+        
+        <!-- Contenedor de proyectos técnicos -->
+        <div class="projects-grid" id="technical-projects">
+            <!-- Los proyectos se cargarán desde projects-data.js -->
+        </div>
+    </section>
 
-  <!-- ***** Footer ***** -->
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="about">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-image">👨‍💻</div>
+            <div class="about-text">
+                <p>
+                    Soy una persona entusiasta de los videojuegos desde adolescente. Comencé a interesarme por la programación 
+                    de videojuegos a los 15 años usando UE3. Siempre busco mejorar mis habilidades de programación.
+                </p>
+                <p>
+                    Soy una persona de mente abierta, responsable, ordenada y proactiva. Tengo ganas de seguir aprendiendo 
+                    cosas nuevas y desarrollar características increíbles para crear experiencias únicas en videojuegos.
+                </p>
+            </div>
+        </div>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
-  </a>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="./index.js"></script>
+        <!-- Habilidades organizadas por categorías -->
+        <div class="skills">
+            <div class="skill-category">
+                <h3>Desarrollo de Juegos</h3>
+                <ul class="skill-list">
+                    <li>Unreal Engine 5</li>
+                    <li>Gameplay Programming</li>
+                    <li>AI Programming</li>
+                    <li>Performance Profiling</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Herramientas Técnicas</h3>
+                <ul class="skill-list">
+                    <li>Navmesh Tool</li>
+                    <li>Level Streaming Tool</li>
+                    <li>C++ Programming</li>
+                    <li>Blueprint System</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Especialidades</h3>
+                <ul class="skill-list">
+                    <li>3rd Person Shooters</li>
+                    <li>Gravity Mechanics</li>
+                    <li>Enemy AI</li>
+                    <li>Level Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Conectemos</h2>
+        <p>¿Tienes un proyecto interesante? ¡Me encantaría colaborar contigo!</p>
+        <div class="contact-links">
+            <a href="./cv.pdf" class="contact-link">📄 Mi CV</a>
+            <a href="mailto:tu-email@ejemplo.com" class="contact-link">📧 Email</a>
+            <a href="#" class="contact-link">💼 LinkedIn</a>
+            <a href="#" class="contact-link">🐙 GitHub</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Pedro Collado Rojas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="scripts/data/games-data.js"></script>
+    <script src="scripts/data/projects-data.js"></script>
+    <script src="scripts/components/card-builder.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
-
 </html>

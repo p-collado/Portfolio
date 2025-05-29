@@ -1,0 +1,332 @@
+/* ==========================================
+   COMPONENTES DE CARDS Y PROYECTOS
+   ========================================== */
+
+/* ==========================================
+   GRID PRINCIPAL DE PROYECTOS
+   ========================================== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* En móviles, hacer las cards más pequeñas */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* ==========================================
+   CARD BASE - ESTILOS COMUNES PARA TODAS LAS CARDS
+   ========================================== */
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+/* Efecto hover base para todas las cards */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+/* ==========================================
+   IMAGEN/ICONO DEL PROYECTO
+   ========================================== */
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #00d4ff;
+    position: relative;
+}
+
+/* Para cuando tengas imágenes reales, usa esta clase */
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================
+   CONTENIDO DE LA CARD
+   ========================================== */
+
+.project-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #00d4ff;
+}
+
+.project-description {
+    color: #d4d4d8;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   BADGES Y ETIQUETAS
+   ========================================== */
+
+.project-badge {
+    background: linear-gradient(45deg, #00d4ff, #7c3aed);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+/* ==========================================
+   TECNOLOGÍAS USADAS
+   ========================================== */
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+/* ==========================================
+   ENLACES DEL PROYECTO
+   ========================================== */
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Botón base para enlaces */
+.project-link {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #00d4ff, #7c3aed);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 100px;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* ==========================================
+   VARIACIONES DE BOTONES
+   ========================================== */
+
+/* Botón principal destacado */
+.project-link.primary {
+    background: linear-gradient(45deg, #10b981, #059669);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+}
+
+.project-link.primary:hover {
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+
+/* Botón deshabilitado */
+.project-link.disabled {
+    background: rgba(255, 255, 255, 0.1);
+    color: #666;
+    cursor: not-allowed;
+}
+
+.project-link.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Botón secundario */
+.project-link.secondary {
+    background: rgba(124, 58, 237, 0.2);
+    color: #a78bfa;
+    border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.project-link.secondary:hover {
+    background: rgba(124, 58, 237, 0.3);
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+}
+
+/* ==========================================
+   TIPOS ESPECÍFICOS DE CARDS
+   ========================================== */
+
+/* CARD DE JUEGO DESTACADO */
+.featured-project {
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+.featured-project:hover {
+    box-shadow: 0 20px 60px rgba(0, 212, 255, 0.4);
+    transform: translateY(-15px) scale(1.02);
+}
+
+/* CARD DE PROYECTO TÉCNICO */
+.tech-project {
+    border-left: 3px solid #7c3aed;
+}
+
+.tech-project:hover {
+    border-left-color: #00d4ff;
+}
+
+.tech-project .project-title {
+    color: #a78bfa;
+}
+
+.tech-project .project-image {
+    background: linear-gradient(45deg, #1e1b4b, #312e81);
+    color: #a78bfa;
+}
+
+/* CARD PLACEHOLDER (PARA PROYECTOS FUTUROS) */
+.placeholder-card {
+    opacity: 0.7;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+}
+
+.placeholder-card .project-image {
+    opacity: 0.5;
+    background: linear-gradient(45deg, #374151, #4b5563);
+}
+
+.placeholder-card .project-title {
+    color: #9ca3af;
+}
+
+/* ==========================================
+   EFECTOS ESPECIALES
+   ========================================== */
+
+/* Efecto de brillo en hover para cards destacadas */
+.featured-project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s;
+}
+
+.featured-project:hover::before {
+    left: 100%;
+}
+
+/* ==========================================
+   ESTADOS DE CARGA Y VACÍO
+   ========================================== */
+
+.loading-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.loading-card .project-image::after {
+    content: '⏳';
+    font-size: 2rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Card vacía para agregar nuevos proyectos */
+.add-project-card {
+    border: 2px dashed rgba(0, 212, 255, 0.3);
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.add-project-card:hover {
+    opacity: 1;
+    border-color: #00d4ff;
+    transform: translateY(-5px);
+}
+
+.add-project-card .project-image::after {
+    content: '➕';
+    font-size: 4rem;
+    color: #00d4ff;
+}
+
+/* ==========================================
+   UTILIDADES PARA DESARROLLADORES
+   ========================================== */
+
+/* Clase para ocultar cards temporalmente */
+.project-card.hidden {
+    display: none;
+}
+
+/* Clase para marcar cards como "en desarrollo" */
+.project-card.in-development {
+    border: 2px solid #f59e0b;
+    position: relative;
+}
+
+.project-card.in-development::after {
+    content: '🚧 EN DESARROLLO';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f59e0b;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
